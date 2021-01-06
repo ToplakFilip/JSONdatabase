@@ -1,0 +1,40 @@
+{
+  "fruit": {
+    "apple": {
+      "size": "medium",
+      "rarity": "common",
+      "types": {
+        "red_apple": {
+          "color": "red",
+          "taste": "sweet"
+        },
+        "green apple": {
+          "color": "green",
+          "taste": "sour"
+        },
+        "yellow_apple": {
+          "color": "yellow",
+          "taste": "awful"
+        }
+      }
+    },
+    "grapes": {
+      "size": "small",
+      "rarity": "common",
+      "types": {
+        "red_grapes": {
+          "color": "purple",
+          "taste": "tart"
+        },
+        "white_grapes": {
+          "color": "green",
+          "taste": "sweet"
+        },
+        "rainbow_grapes": {
+          "color": "all_of_them",
+          "taste": "magical"
+        }
+      }
+    }
+  }
+}
