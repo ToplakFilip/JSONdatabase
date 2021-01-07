@@ -1,4 +1,4 @@
-JSON database which uses multithreading processing for multiple requests at the same time.
+JSON database which uses simple multithreading processing for multiple requests at the same time.
 It uses GSON for serialization/deserialization of json objects and Jcommander for command line arguments.
 
 <pre>
