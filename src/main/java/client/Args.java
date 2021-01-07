@@ -13,7 +13,7 @@ public class Args {
     @Parameter(names = {"-k"}, description = "key")
     public String key;
 
-    @Parameter(names = {"-v"}, description = "value, only for [set] request")
+    @Parameter(names = {"-v"}, description = "set new value, only for [set] request")
     public String value;
 
     @Parameter(names = {"-in"}, description = "Read inside .json files")

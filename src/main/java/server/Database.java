@@ -16,7 +16,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 class Database {
 
-    private final Gson gson = new Gson();
+    private Gson gson = new Gson();
     private final Map<Object, Object> mapa = new HashMap<>();
     private final Map<String, Object> response = new LinkedHashMap<>();
     private final String filepath = "src/main/java/server/data/db.json";
@@ -28,12 +28,14 @@ class Database {
 
     Database() {
         try {
+            this.gson = new GsonBuilder().setPrettyPrinting().create();
             // READS JSON FILE ON STARTUP
             bufferedReader = new BufferedReader(new FileReader(filepath));
             JsonObject jsonObject = gson.fromJson(bufferedReader, JsonObject.class);
             jsonObject.keySet().forEach(keyString -> {
                 Object keyValue = jsonObject.get(keyString);
                 mapa.put(keyString, keyValue);
+
             });
         } catch (Exception e) {
             e.fillInStackTrace();

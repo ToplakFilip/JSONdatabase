@@ -1,0 +1,25 @@
+{
+  "type": "set",
+  "key": "vegetables",
+  "value": {
+    "carrot": {
+      "size": "medium",
+      "rarity": "common",
+      "color": "orange"
+    },
+    "cabbage": {
+      "size": "big",
+      "rarity": "common",
+      "types": {
+        "green_cabbage": {
+          "color": "green",
+          "taste": "sour"
+        },
+        "red_cabbage": {
+          "color": "purple",
+          "taste": "bitter"
+        }
+      }
+    }
+  }
+}

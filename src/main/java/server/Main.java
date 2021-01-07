@@ -19,7 +19,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        System.out.println("Server started!");
+        System.out.println("[ Server started ]");
         ExecutorService executor = Executors.newFixedThreadPool(100);
 
         while (true) {

@@ -26,7 +26,7 @@ public class Main {
         ) {
 
             Args commander = new Args();
-            System.out.println("Client started!");
+            System.out.println("[ Client started ]");
             JCommander.newBuilder()
                     .addObject(commander)
                     .build()
